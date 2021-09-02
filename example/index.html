@@ -1,19 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sample of HTML Anti Copy</title>
-</head>
-<body>
-  <div id="text"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample of HTML Anti Copy</title>
+    <style>
+      #text {
+        font-size: 2em;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="text"></div>
+    <label>
+      Text
+      <textarea id="input" placeholder="Type here">Copy me! Haha</textarea>
+    </label>
+    <label>
+      Shuffle Level
+      <input type="number" id="level" placeholder="Shuffle Level" value="1" />
+    </label>
+    <label>
+      Disable CSS
+      <input type="checkbox" id="noCss" />
+    </label>
 
-  <script src="../build/htmlAntiCopy.js"></script>
-  <script>
-    const textEl = document.getElementById("text")
+    <script src="../build/htmlAntiCopy.js"></script>
+    <script>
+      const
+        textEl = document.getElementById("text"),
+        inputEl = document.getElementById("input"),
+        levelEl = document.getElementById("level"),
+        noCssEl = document.getElementById("noCss")
+      var level = 1
 
-    textEl.innerHTML = antiCopy("Hello World!")
-  </script>
-</body>
+      const toggleCss = () => {
+        if (noCssEl.checked) textEl.querySelector("span").className += "-"
+        else
+          textEl.querySelector("span").className = textEl
+            .querySelector("span")
+            .className.replace("-", "")
+      }
+
+      inputEl.oninput = () => {
+        textEl.innerHTML = antiCopy(inputEl.value, level)
+        toggleCss()
+        console.log(textEl.innerText)
+      }
+      inputEl.oninput()
+      levelEl.oninput = () => {
+        level = parseInt(levelEl.value)
+        inputEl.oninput()
+      }
+
+      noCssEl.onclick = () => {
+        toggleCss()
+      }
+      noCssEl.onclick()
+    </script>
+  </body>
 </html>
