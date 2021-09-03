@@ -1,6 +1,6 @@
 <!--
   Created at: 09/02/2021 20:19:50 Thursday
-  Modified at: 09/03/2021 01:47:52 AM Friday
+  Modified at: 09/03/2021 01:52:29 AM Friday
 
         Copyright (C) 2021 Thiago Navarro
   See file "license" for details about copyright
@@ -14,6 +14,13 @@ The user don't see these chars because it is hidden with CSS
 
 In HTML, the chars has no difference between others, so you can't copy the
 original text even on html.
+
+Currently this lib has just an example using Javascript, but the correct is the
+server generate the scrambled text.
+
+In Nim, is possible to use same algorithm in both sides!
+
+Later an server example will be added!
 
 ## Usage
 
