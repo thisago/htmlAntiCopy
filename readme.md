@@ -1,6 +1,6 @@
 <!--
   Created at: 09/02/2021 20:19:50 Thursday
-  Modified at: 09/03/2021 01:45:09 AM Friday
+  Modified at: 09/03/2021 01:47:52 AM Friday
 
         Copyright (C) 2021 Thiago Navarro
   See file "license" for details about copyright
@@ -68,10 +68,14 @@ Example of output:
 
 An example can be found in [`example/`](./example) folder.
 
+Or online, in [GH pages](https://thisago.github.io/htmlAntiCopy/example/)
+
 ## TODO
 
 - [ ] Use `cstring` for all `string`s
 - [ ] Another anti copy method that all html is fake text and the real is on css pseudo elements. This will allow you choose the fake text
+- [ ] Add docs
+- [ ] Add tests
 
 ## Licence
 
