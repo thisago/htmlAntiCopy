@@ -1,6 +1,6 @@
 <!--
   Created at: 09/02/2021 20:19:50 Thursday
-  Modified at: 09/02/2021 08:40:58 PM Thursday
+  Modified at: 09/03/2021 01:45:09 AM Friday
 
         Copyright (C) 2021 Thiago Navarro
   See file "license" for details about copyright
@@ -71,6 +71,7 @@ An example can be found in [`example/`](./example) folder.
 ## TODO
 
 - [ ] Use `cstring` for all `string`s
+- [ ] Another anti copy method that all html is fake text and the real is on css pseudo elements. This will allow you choose the fake text
 
 ## Licence
 
