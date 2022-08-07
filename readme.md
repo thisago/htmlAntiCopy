@@ -24,7 +24,9 @@ Later an server example will be added!
 
 ## Usage
 
-You need to install the [Nim](https://nim-lang.org) in your system to follow
+You can use the compiled JS in [build](./build), or compile.
+
+To compile, you need to install the [Nim](https://nim-lang.org) in your system to follow
 this steps
 
 ### In web
