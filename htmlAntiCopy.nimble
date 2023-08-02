@@ -1,11 +1,12 @@
 # Package
 
-version       = "0.1.0"
+version       = "0.1.1"
 author        = "Thiago Navarro"
 description   = "Block copy of any text in HTML"
 license       = "MIT"
 srcDir        = "src"
 
+installExt = @["nim"]
 binDir = "build"
 bin = @["htmlAntiCopy"]
 

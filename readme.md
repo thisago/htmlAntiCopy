@@ -1,11 +1,3 @@
-<!--
-  Created at: 09/02/2021 20:19:50 Thursday
-  Modified at: 09/03/2021 01:52:29 AM Friday
-
-        Copyright (C) 2021 Thiago Navarro
-  See file "license" for details about copyright
--->
-
 # htmlAntiCopy
 
 This simple lib prevents the copy of html text by joining a lot of chars randomly.
